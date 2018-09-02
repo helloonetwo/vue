@@ -9,21 +9,21 @@ Vue.use(VueRouter)
 
 
 export  default  new  VueRouter({
-routes:  [
-{
-path:  '/', redirect:  '/home'
-},
-{
-path:  '/home', component:  Home,
-},
-{
-path:  '/search', component:  Search,
-},
-{
-path:  '/order', component:  Order,
-},
-{
-path:  '/person', component:  Person,
-}
-]
+   routes:  [
+       {
+       path:  '/', redirect:  '/home'
+       },
+       {
+        path:  '/home', component:  Home,
+       },
+       {
+       path:  '/search', component:  Search,
+       },
+       {
+       path:  '/order', component:  Order,
+       },
+       {
+       path:  '/person', component:  Person,
+       }
+       ]
 })
