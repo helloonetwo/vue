@@ -122,7 +122,7 @@
         </div>
       </nav>
       <!--首页附近商家-->
-      <div class="msite_shop_list">
+      <!-- <div class="msite_shop_list">
         <div class="shop_header">
           <i class="iconfont icon-xuanxiang"></i>
           <span class="shop_header_title">附近商家</span>
@@ -307,24 +307,27 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
+      <ShopList/>
     </section>
 </template>
 
 
 <script>
-//引入 HeaderTop
-import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+
 import Swiper from 'swiper'
 import 'swiper/dist/css/swiper.min.css'
+//引入 HeaderTop
+import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+//引入 ShopList
+import ShopList from '../../components/ShopList/ShopList.vue'
 
 export  default  {
-  //创建一个swipper实例对象，进行视图轮播
-  //有一个参数，第一个为'.swiper-container',第2个为配置对象
+
   mounted() {
     new Swiper ('.swiper-container', {
         loop: true,
-    // 如果需要分页器
+    
     pagination: {
       el: '.swiper-pagination',
     },
@@ -332,7 +335,9 @@ export  default  {
 },
  //映射成标签
    components:{
-     HeaderTop
+     HeaderTop,
+     ShopList
+
    }
 }
 </script>
