@@ -4,7 +4,7 @@ import  Home  from  '../pages/Home/Home.vue'
 import  Search  from  '../pages/Search/Search.vue'
 import  Order  from  '../pages/Order/Order.vue'
 import  Person  from  '../pages/Person/Person.vue'
-
+import  Login  from  '../pages/Login/Login.vue'
 Vue.use(VueRouter)
 
 
@@ -24,6 +24,9 @@ export  default  new  VueRouter({
        },
        {
        path:  '/person', component:  Person,
+       },
+       {
+       path:  '/login', component: Login,
        }
        ]
 })
